@@ -15,7 +15,7 @@ int main(){
     }
 
     for (i = 0; i < 2000; i++){
-        fscanf(myFile, "%d,", &numberArray[i] );
+        fscanf(myFile, "%d", &numberArray[i] );
     }
 
     for (i = 0; i < 2000; i++)
