@@ -8,6 +8,7 @@ int main(){
     //read file into array
     int numberArray[2000];
     int i;
+    int n = sizeof(arr) / sizeof(arr[0]);
 
     if (myFile == NULL){
         printf("Error Reading File\n");
@@ -19,10 +20,11 @@ int main(){
     }
 
     for (i = 0; i < 2000; i++)
-        {if (numberArray[i] > numberArray [i - 1] numberArray[i] > numberArray[i + 1])
+        {if (numberArray[i] > numberArray [i - 1] && numberArray[i] > numberArray[i + 1])
 }
         printf(numberArray[i]);
 
+     printf("Measurements", n);
     fclose(myFile);
 
     return 0;
